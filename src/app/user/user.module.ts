@@ -18,8 +18,8 @@ import { LoginComponent } from './components/login/login.component';
   ],
   imports: [
     CommonModule,
-    SharedModule
-    UserRoutingModule,
+    SharedModule,
+    UserRoutingModule
   ]
 })
 export class UserModule { }
