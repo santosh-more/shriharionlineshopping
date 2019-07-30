@@ -14,8 +14,10 @@ export class UserComponent implements OnInit {
   }
 
   decideRoute() {
-    console.log('decideRoute success');
-    this.router.navigate(['user/login']);
+    if (sessionStorage.getItem('isLoggedIn') === 'true')
+      this.router.navigate(['user/dashbooard']);
+    else
+      this.router.navigate(['user/login']);
   }
 
 }
