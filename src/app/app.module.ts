@@ -12,9 +12,9 @@ import { UserModule } from './user/user.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     SharedModule,
-    UserModule
+    UserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
