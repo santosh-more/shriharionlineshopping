@@ -4,6 +4,9 @@
 /dist
 /tmp
 /out-tsc
+/coverage
+/.scannerwork
+
 # Only exists if Bazel was run
 /bazel-out
 
