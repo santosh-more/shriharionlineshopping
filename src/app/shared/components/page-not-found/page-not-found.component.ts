@@ -14,7 +14,11 @@ export class PageNotFoundComponent implements OnInit {
   }
 
   gotoLogin() {
-    this.router.navigate(['user/login']);
+    if (sessionStorage.getItem('isLoggedIn') === 'true') {
+      this.router.navigate(['user/dashboard']);
+    } else {
+      this.router.navigate(['user/login']);
+    }
   }
 
 }

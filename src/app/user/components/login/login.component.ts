@@ -15,7 +15,8 @@ export class LoginComponent implements OnInit {
 
   login() {
     sessionStorage.setItem('isLoggedIn', 'true');
-    this.router.navigate(['user/dashbooard']);
+    this.router.navigate(['user/dashboard']);
+    // this.router.navigateByUrl('user/dashboard/11');
   }
 
 }

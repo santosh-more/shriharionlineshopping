@@ -14,10 +14,11 @@ export class UserComponent implements OnInit {
   }
 
   decideRoute() {
-    if (sessionStorage.getItem('isLoggedIn') === 'true')
-      this.router.navigate(['user/dashbooard']);
-    else
+    if (sessionStorage.getItem('isLoggedIn') === 'true') {
+      this.router.navigate(['user/dashboard']);
+    } else {
       this.router.navigate(['user/login']);
+    }
   }
 
 }
