@@ -8,6 +8,8 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UploadProductComponent } from './upload-product/upload-product.component';
+import { ViewProductComponent } from './view-product/view-product.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     UserComponent,
     ProfileComponent,
     DashboardComponent,
-    LoginComponent
+    LoginComponent,
+    UploadProductComponent,
+    ViewProductComponent
   ],
   imports: [
     CommonModule,
