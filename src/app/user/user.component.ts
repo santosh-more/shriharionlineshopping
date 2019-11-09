@@ -15,7 +15,7 @@ export class UserComponent implements OnInit {
 
   decideRoute() {
     if (sessionStorage.getItem('isLoggedIn') === 'true') {
-      this.router.navigate(['user/dashboard']);
+      this.router.navigate(['user/upload-product']);
     } else {
       this.router.navigate(['user/login']);
     }
